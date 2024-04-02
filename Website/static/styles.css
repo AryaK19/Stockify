@@ -1,0 +1,250 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+}
+
+.nav{
+    width:100%;
+    height:46px;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #02ac55;
+    box-shadow: 0 0 0px #02ac55,0 0 0px #02ac55;
+    display:flex;  
+    margin-bottom: 20px;
+    transition: .2s;
+    position: fixed;
+
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.nav:hover{
+    transition: .2s;
+    height: 55px;
+    box-shadow: 0 0 2px #02ac55,0 0 7px #02ac55;
+}
+
+.logo{
+    width: 100%;
+    cursor: pointer;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 32px;
+   
+}
+
+
+.container {
+    margin: 100 auto; /* Center horizontally */
+    padding-top:70px;
+    text-align: center;
+    width: 100%;
+    max-height: 1000px;
+
+    
+    
+}
+
+.form{
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    display: flex;
+    background-color: #121212;
+    box-shadow: 0 0 1px #02ac55,0 0 3px #02ac55;
+}
+.form:hover{
+    box-shadow: 0 0 2px #02ac55,0 0 7px #02ac55;
+
+}
+
+.form form {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.form label {
+    color: white;
+    font-weight: bold;
+}
+
+.form input[type="text"] {
+    width: 400px;
+    padding: 8px;
+    margin: 0 10px;
+    outline: none;
+}
+
+
+.button {
+    height: 35px;
+    width: 100px;
+    padding: 8px 20px;
+    background-color: #58b969;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    transition: .2s;
+}
+
+.button:hover {
+    box-shadow: 0 0 5px #02ac55,0 0 20px #02ac55;
+    background-color: #66f1a9;
+    color: black;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.container h3{
+    color: white;
+    font-weight: bold;
+}
+
+
+.input-section0{
+    width: 170px;
+    padding-left: 300px;
+    padding-top: 140px;
+    float: left;
+}
+.input-section0 button{
+    width: 160px;
+}
+
+.input-section{
+    
+    margin: 20px auto;
+    width: 500px;
+    height: 287px;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    box-shadow: 0 0 1px #02ac55,0 0 3px #02ac55;
+    color: white;
+    font-size: 0.6rem;
+
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-top: 2px;
+    padding-bottom: 7px;
+    
+}
+
+
+
+.input-section input{
+    margin-top: 7px auto;
+    
+    width: 90%;
+    height:200px;
+    background-color: transparent;
+    color: #02ac55;
+    resize: none;
+    border-radius: 20px;
+    box-shadow: 0 0 1px #02ac55,0 0 3px #02ac55;
+}
+.input-section:hover{
+    box-shadow: 0 0 2px #02ac55,0 0 7px #02ac55;
+}
+
+.input-section button{
+    margin-top: 10px;
+}
+
+
+
+.alert {
+    width: 480px;
+    padding: 10px;
+    margin: 30px auto;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+
+.alert-success {
+    background-color: #54ff1012;
+    border: 1px solid #d6e9c6;
+    color: #93ff93;
+}
+
+.alert-error {
+    background-color: #ff262614;
+    border: 1px solid #ebccd1;
+    color: #eb514f;
+}
+
+
+.result-section {
+    margin-top: 30px;
+}
+
+
+.resultTable {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: max-content;
+    border-collapse: collapse;
+    color: #ccc;
+}
+.resultTable h2 {
+    height: 40px;
+    width: 100%;
+    background-color: #121212;
+    padding-top: 10px;
+    text-align: center;
+    color: #02ac55;
+    border-radius: 25px;
+    box-shadow: 0 0 1px #02ac55,0 0 3px #02ac55;
+}
+
+.resultTable h2:hover{
+    box-shadow: 0 0 2px #02ac55,0 0 7px #02ac55;
+
+}
+.resultTable table, th, td {
+    font-size: 1rem;
+    padding: 5px;
+    color: #ccc;
+}
+
+.resultTable table {
+    width: 800px;
+    border-collapse: collapse;
+}
+    
+.resultTable th, .resultTable td {
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+    
+.resultTable td,th {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    margin: 0;
+    
+}
+.resultTable th {
+    background-color: #222326;
+}
+
+.resultTable tr:hover {
+    background-color: #0a4c2a93;
+}  
+
