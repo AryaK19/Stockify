@@ -1,0 +1,6 @@
+Flask
+Gunicorn
+yfinance
+pandas
+numpy
+pandas-datareader
