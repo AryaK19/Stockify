@@ -11,7 +11,7 @@
       <div class="logo">
         <a href="/">
           <img class="logo-img" src="static/STOKIFY.png" alt="Stockify" />
-      </a>
+        </a>
       </div>
     </div>
 
@@ -25,25 +25,25 @@
       </div>
 
       <h3>OR</h3>
+      
+      <div class="input-section0">
+        <form action="{{ url_for('analyzeNF') }}" method="POST">
+          <button class="button" type="submit">Analyze Nifty Fifty</button>
+        </form>
+      </div>
+      <h3>OR</h3>
+      
+      <div class="input-section">
+        <h2>Upload or Drag & Drop a Text File</h2>
 
-      <div class="form2">
-        <div class="input-section0">
-          <form action="{{ url_for('analyzeNF') }}" method="POST">
-            <button class="button" type="submit">Analyze Nifty Fifty</button>
-          </form>
-        </div>
-        <div class="input-section">
-          <h2>Upload or Drag & Drop a Text File</h2>
-
-          <form
-            action="{{ url_for('analyze') }}"
-            method="POST"
-            enctype="multipart/form-data"
-          >
-            <input type="file" id="fileInput" name="fileInput" accept=".txt" />
-            <button class="button" type="submit">Stockify</button>
-          </form>
-        </div>
+        <form
+          action="{{ url_for('analyze') }}"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="file" id="fileInput" name="fileInput" accept=".txt" />
+          <button class="button" type="submit">Stockify</button>
+        </form>
       </div>
 
       {% with messages = get_flashed_messages(with_categories=true) %} {% if
